@@ -23,21 +23,21 @@ def chose_language(message):
     chat_id = message.chat.id
     lang = user_lang.get(chat_id, 'uz')
 
-    if message.text == "🇺🇿Uz":
-        lang = "uz"
-        bot.send_message(chat_id, choose_catalog[lang], reply_markup=generate_main())
-    if message.text == "🇸🇦Ar":
-        lang = "ar"
-        bot.send_message(chat_id, choose_catalog[lang], reply_markup=generate_main())
-    if message.text == "🇬🇧En":
-        lang = "en"
-        bot.send_message(chat_id, choose_catalog[lang], reply_markup=generate_main())
-    if message.text == "🇩🇪Gr":
-        lang = "gr"
-        bot.send_message(chat_id, choose_catalog[lang], reply_markup=generate_main())
-    if message.text == "🇫🇷Fr":
-        lang = "fr"
-        bot.send_message(chat_id, choose_catalog[lang], reply_markup=generate_main())
+    # if message.text == "🇺🇿Uz":
+    #     lang = "uz"
+    #     bot.send_message(chat_id, choose_catalog[lang], reply_markup=generate_main())
+    # if message.text == "🇸🇦Ar":
+    #     lang = "ar"
+    #     bot.send_message(chat_id, choose_catalog[lang], reply_markup=generate_main())
+    # if message.text == "🇬🇧En":
+    #     lang = "en"
+    #     bot.send_message(chat_id, choose_catalog[lang], reply_markup=generate_main())
+    # if message.text == "🇩🇪Gr":
+    #     lang = "gr"
+    #     bot.send_message(chat_id, choose_catalog[lang], reply_markup=generate_main())
+    # if message.text == "🇫🇷Fr":
+    #     lang = "fr"
+    #     bot.send_message(chat_id, choose_catalog[lang], reply_markup=generate_main())
 
 
     user_lang[chat_id] = lang
